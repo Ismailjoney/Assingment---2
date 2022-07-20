@@ -56,6 +56,9 @@
 .menu{
     border: 1px solid black;
 }
+.active{
+    background-color: rgb(235, 40, 40);
+}
 .blogs-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
