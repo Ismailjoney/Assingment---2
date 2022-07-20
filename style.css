@@ -39,10 +39,11 @@
     color:aliceblue;
     font-weight: 700;
     margin-top: 19px;
+    display: inline-block;
 }
 .header-img img{
     position: relative;
-    top:124px;;
+    top:139px;;
     left:165px;   
 }
 /* main grid */
@@ -93,6 +94,7 @@
     font-size: 20px;
     color:black;
     border-radius: 10px;
+    border:1px solid red;
 }
 .menu-bar .different-item{
     background-color: rgb(248, 14, 14);
@@ -132,3 +134,21 @@ footer .footer-link{
 .fa-brands{
     font-size: 35px;
 }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

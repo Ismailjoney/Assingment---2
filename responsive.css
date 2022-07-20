@@ -1,0 +1,62 @@
+
+@media screen and (max-width:576px) {
+    header{
+        margin:0;
+     }
+     .header-banner{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-info{
+        position: relative;
+        top:30px;
+        left:135px
+    }
+    .header-img img{
+        position: relative;
+        top:124px;;
+        left:155px;   
+    }
+    /* main */
+    .conteiner{
+        display:flex;
+        flex-direction: column;        
+        width:100%;
+        margin: 20px 0;
+        padding-bottom:55px;
+        
+    }
+    .menu-bar{
+        background-color:white;
+    }
+    .blogs-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* footer */
+    .footer-contener{
+        width:100%;
+        border: 1px solid red;  
+    }
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
