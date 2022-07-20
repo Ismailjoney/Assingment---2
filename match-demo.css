@@ -1,21 +1,255 @@
-.conteiner{
-    display:flex;
-    justify-content: center;
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Edu SA Beginner', cursive;
+   font-family: 'Fira Sans', sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Kanit', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
-.upcoming-match{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: space-around;
-    grid-gap:40px 40px;
-    width:1070px;
- }
- .team{
-    display:flex;
-    align-items: center;
- }
- span{
-    /* display: inline-block; */
-    padding:0px 10px;
-    font-weight: bold;
-    font-size: 23px;
- }
+header{
+   margin:30px 0;
+}
+.top-conteiner{
+   display: flex;
+   justify-content: center;
+  
+}
+
+.header-banner{
+   border-radius: 35px;
+   width:1070px;
+   padding-bottom: 120px;
+   background-color: black;
+   color:aliceblue;
+   display: flex;
+}
+
+.header-info{
+   position: relative;
+   top:70px;
+   left:90px
+}
+.top-heading{
+   font-size: 34px;
+}
+.banner-btn{
+   text-decoration: none;
+   background-color: red;
+   border-radius: 6px;
+   padding:7px 19px;
+   color:aliceblue;
+   font-weight: 700;
+   margin-top: 19px;
+   display: inline-block;
+}
+.header-img img{
+   position: relative;
+   top:124px;;
+   left:165px;   
+}
+ 
+.conteiner{
+   display:grid;
+   grid-template-columns: 210px repeat(1,3fr);
+   grid-gap:10px;
+   width:1070px;
+   padding-bottom: 120px;
+}
+.menu{
+   border: 1px solid black;
+}
+
+.blogs-content{
+   padding:50px 0;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap:18px 20px;
+
+}
+ 
+/*--------------
+ menu bar style here
+------------------------ */
+.menu-bar{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(15, 5, 5);
+   height:280px;
+   border-radius: 7px;
+}
+.menu-bar  .menu-item{
+   margin-top: 20px;
+   text-align: center;
+   width:160px;
+   text-decoration: none;
+   background-color: aliceblue;
+   padding:7px 10px;
+   font-weight: bold;
+   font-size: 20px;
+   color:black;
+   border-radius: 10px;
+   border:1px solid red;
+}
+.menu-bar .different-item{
+   background-color: rgb(248, 14, 14);
+}
+
+.team{
+   display:flex;
+   align-items: center;
+}
+span{
+   padding:0px 10px;
+   font-weight: bold;
+   font-size: 23px;
+} 
+.team-play{
+   text-align: center;
+}
+span{
+
+   padding:0px 10px;
+   font-weight: bold;
+   font-size: 23px;
+} 
+/*---------------------
+ Footer style start here 
+ ----------------------------------*/
+ 
+
+footer{
+   background-color: black;
+   padding:50px 0;
+}
+.footer-contener{
+   width:1070px;
+   border: 1px solid red;  
+}
+.footer-heading{
+   text-align: center;
+   color:aliceblue;
+}
+.footer-tittle{
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+footer .footer-link{
+   text-decoration: none;
+   padding:20px;
+}
+.footer-info{
+   display: flex;
+   justify-content: space-between;
+}
+.social-contact{
+   display: flex;
+   justify-content:space-around;
+}
+
+.fa-brands{
+   font-size: 35px;
+}
+
+ 
+/*------------------
+ responsive phone 
+ -------------------------------*/
+ @media screen and (max-width:576px) {
+   .top-conteiner{
+      width:100%;
+   }
+       header{
+          margin:0;
+       }
+       .header-banner{ 
+          width:100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .header-info{
+          position: relative;
+          top:30px;
+          left:135px
+      }
+      .header-img img{
+          position: relative;
+          top:124px;;
+          left:155px;   
+      }
+      .conteiner{
+          display:flex;
+          flex-direction: column;        
+          width:100%;
+          margin: 20px 0;
+          padding-bottom:55px;
+          
+      }
+      .menu-bar{
+          background-color:white;
+      }
+      .blogs-content{
+         display:grid;
+          grid-template-columns: repeat(1,1fr); 
+      }
+      .team{
+         justify-content: center;
+      }
+      /* footer */
+      .footer-contener{
+          width:100%;
+          border: 1px solid red;  
+      }
+      .footer-info{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+      }
+  
+   
+}
+
+
+/*---------------
+ tab responsive 
+ ---------------------------------*/
+@media screen and (min-width:576px) and (max-width:768px){
+   .header-banner{
+      border-radius:0;
+      width:100%;
+      padding-bottom:90px;
+     
+  }
+  .header-info{
+      position: relative;
+      top:35px;
+      left:10px;
+  }
+  .header-img img{
+      position: relative;
+      top:94px;;
+      left:15px;   
+  }
+  .conteiner{
+   display:flex;
+   flex-direction: column;
+   width:100%;
+   padding-bottom: 120px;
+}
+
+.menu-bar{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+.blogs-content{
+   grid-template-columns: repeat(2,1fr);
+   grid-gap:30px 50px;
+   justify-items: center;
+}
+
+}
+   

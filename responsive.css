@@ -1,4 +1,4 @@
-
+/* phone responsive */
 @media screen and (max-width:576px) {
     header{
         margin:0;
@@ -18,7 +18,6 @@
         top:124px;;
         left:155px;   
     }
-    /* main */
     .conteiner{
         display:flex;
         flex-direction: column;        
@@ -32,6 +31,7 @@
     }
     .blogs-content{
         grid-template-columns: repeat(1,1fr);
+        
     }
     /* footer */
     .footer-contener{
@@ -43,20 +43,49 @@
         justify-content: space-between;
         flex-direction: column;
     }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------
+tab responsive
+---------------------- */
+@media screen and (min-width:577px) and (max-width:768px){
+    .header-banner{
+        border-radius:0;
+        width:100%;
+        padding-bottom:90px;
+       
+    }
+    .header-info{
+        position: relative;
+        top:35px;
+        left:10px;
+    }
+    .header-img img{
+        position: relative;
+        top:118px;;
+        left:15px;   
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .blogs-content{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .menu-bar{
+        background-color:white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height:280px;
+        border-radius: 7px;
+    }
+    .menu-item{
+        margin:0 8px;
+        width:100%;
+    }
 }
